@@ -1,0 +1,6 @@
+Rotate on axis going in/out of screen (z axis) --- right stick (left/right)
+Rotate on axis going up/down of screen (y axis) --- left stick (left/right), dpad / A,D
+Rotate on axis going along length of screen (x axis) --- left stick (up/down), dpad / W,S
+Interact --- A button / L click, Enter, F
+Zoom in --- Rb, Z
+Zoom out --- Lb, X
