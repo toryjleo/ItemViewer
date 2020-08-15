@@ -19,6 +19,12 @@ public class InspectableObject : MonoBehaviour
 
     }
 
+    public void Interact() 
+    {
+        // TODO: Do interaction code
+        Debug.Log("Interacting");
+    }
+
     public void RotateUp() 
     {
         transform.RotateAround(transform.position, new Vector3(1, 0, 0), Time.deltaTime * rotationSpeed);
