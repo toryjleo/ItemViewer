@@ -16,37 +16,38 @@ public class InspectableObject : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        RotateCW();
+
     }
 
     public void RotateUp() 
     {
-        transform.RotateAround(transform.position, transform.right, Time.deltaTime * rotationSpeed);
+        transform.RotateAround(transform.position, new Vector3(1, 0, 0), Time.deltaTime * rotationSpeed);
     }
 
     public void RotateDown()
     {
-        transform.RotateAround(transform.position, -transform.right, Time.deltaTime * rotationSpeed);
+        transform.RotateAround(transform.position, new Vector3(-1, 0, 0), Time.deltaTime * rotationSpeed);
     }
 
     public void RotateLeft()
     {
-        transform.RotateAround(transform.position, transform.up, Time.deltaTime * rotationSpeed);
+        transform.RotateAround(transform.position, new Vector3(0, 1, 0), Time.deltaTime * rotationSpeed);
     }
 
     public void RotateRight() 
     {
-        transform.RotateAround(transform.position, -transform.up, Time.deltaTime * rotationSpeed);
+        transform.RotateAround(transform.position, new Vector3(0, -1, 0), Time.deltaTime * rotationSpeed);
     }
+
 
     public void RotateCW()
     {
-        transform.RotateAround(transform.position, -transform.forward, Time.deltaTime * rotationSpeed);
+        transform.RotateAround(transform.position, new Vector3(0, 0, -1), Time.deltaTime * rotationSpeed);
     }
 
     public void RotateCCW() 
     {
-        transform.RotateAround(transform.position, transform.forward, Time.deltaTime * rotationSpeed);
+        transform.RotateAround(transform.position, new Vector3(0, 0, 1), Time.deltaTime * rotationSpeed);
     }
 
 }
